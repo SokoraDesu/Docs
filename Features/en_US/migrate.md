@@ -7,12 +7,12 @@
 
 <!-- START(Introduction) -->
 ## Introduction
-A hard part of switching to a new and better bot (like Sokora) with a levelling system is that you probably were using another bot for this purpose before. This usually leaves you with three options:
+A hard part of switching to a new and better bot (like Sokora) with a leveling system is that you probably were using another bot for this purpose before. This usually leaves you with three options:
 - Keep both bots, doing with one what you could do with the other one. Easiest, but suboptimal.
 - Remove your previous bot. Optimal, but your leaderboard is lost, which your members won't like.
 - Not use Sokora. Your leaderboard is kept, but you miss the best Discord bot. Not good!
 <!-- $$ -->
-However, <b>if you use MEE6, Tatsu, Lurkr or Amari for levelling, you're lucky!</b>
+However, <b>if you use MEE6, Tatsu, Lurkr or Amari for leveling, you're lucky!</b>
 <!-- $$ -->
 We can bring your leaderboard over to Sokora.
 <!-- END(Introduction) -->
@@ -24,11 +24,11 @@ This process depends on the bot you're migrating from.
 <!-- $$ -->
 <!-- $$ -->
 ### MEE6
-You need to enable leaderboard visibility from your dashboard. Open the leaderboard settings in the MEE6 dashboard and enable the option \`Make my server's leaderboard public\`. Otherwise data cannot be imported.
+You need to enable leaderboard visibility from your dashboard. Open the leaderboard settings in the MEE6 dashboard and enable the option `Make my server's leaderboard public`. Otherwise data cannot be imported.
 <!-- $$ -->
 <!-- $$ -->
 ### Tatsu
-*Nothing required.*
+You need an API key, obtained by running `t!apikey` anywhere in the server to migrate.
 <!-- $$ -->
 <!-- $$ -->
 ### Lurkr
@@ -36,7 +36,7 @@ You need an API key, obtained from <https://lurkr.gg/docs/api#authentication>.
 <!-- $$ -->
 Additionally, you need to grant specific permissions for the server you want to import from. Check the same link, it describes this immediately after explaining how to get your API key.
 <!-- $$ -->
-Lastly, you need to manually change \`Choose the visibility for the web leaderboard\` in Lurkr's dashboard to \`Public\`.
+Lastly, you need to manually change `Choose the visibility for the web leaderboard` in Lurkr's dashboard to `Public`.
 <!-- $$ -->
 <!-- $$ -->
 ### Amari
@@ -68,7 +68,7 @@ And once done, you're good to go! You can now remove your old bot and keep your 
 <!-- START(FAQ) -->
 ## FAQ
 <CLOSABLE (What about level rewards like roles and channels? Do these get imported?)>
-Usually yes, though it depends on the bot. If a bot supports level rewards but we cannot import them, Sokora will warn you about that.
+It depends on the bot. As of now we only can do this for MEE6; Amari is on the works. If a bot supports level rewards but we cannot import them, Sokora will warn you about that.
 </CLOSABLE (What about level rewards like roles and channels? Do these get imported?)>
 <!-- $$ -->
 
