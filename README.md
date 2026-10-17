@@ -1,3 +1,5 @@
 # Docs
+
 Documentation source files.
-Refer to the README file of [SokoraDesu/Legal](https://github.com/SokoraDesu/Legal) as this uses the same system.
+
+Sokora docs are built with Zensical, hosted on [docs.sokora.org](https://docs.sokora.org/), and offer loads of useful information

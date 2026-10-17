@@ -1,0 +1,92 @@
+site_name: Sokora
+site_url: https://sokora.org/
+repo_url: https://github.com/SokoraDesu/Sokora
+repo_name: sokoradesu/sokora
+
+copyright: Copyright &copy; Subete
+
+theme:
+  variant: classic
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: purple
+      accent: purple
+  features:
+    - content.footnote.tooltips
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sokoradesu/sokora
+
+markdown_extensions:
+  - abbr
+  - footnotes
+  - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.superfences:
+       custom_fences:
+         - name: mermaid
+           class: mermaid
+           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Intro: index.md
+  - User guide:
+      - Welcome to the user guide: users/index.md
+      - The in-bot settings panel: users/pse.md
+  - Migrate your leveling bot: import.md
+  - Developer guide:
+      - Welcome, contributor!: dev/index.md
+      - First steps: dev/101.md
+      - The codebase:
+        - Overall structure: dev/structure.md
+        - Testing: dev/testing.md
+      - Guidelines:
+        - Developer manual: dev/contributing.md
+        - Code quality: dev/ql.md
+        - Commit system: dev/subecommits.md

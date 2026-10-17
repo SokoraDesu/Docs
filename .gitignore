@@ -1,0 +1,8 @@
+site/
+.venv
+.cache
+node_modules
+
+# temp, to avoid leaks ;)
+interkora
+mkdocs2.yml

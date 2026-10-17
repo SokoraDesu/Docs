@@ -1,0 +1,151 @@
+:root {
+  --d-blurple:      #5865f2;
+  --d-blurple-hov:  #4752c4;
+  --d-blurple-act:  #3c45a5;
+
+  --d-grey:         #4e5058;
+  --d-grey-hov:     #6d6f78;
+  --d-grey-act:     #80848e;
+
+  --d-green:        #248046;
+  --d-green-hov:    #1a6334;
+  --d-green-act:    #145c2e;
+
+  --d-red:          #da373c;
+  --d-red-hov:      #a12d2f;
+  --d-red-act:      #842223;
+
+  --d-yellow:       #f0b232;
+  --d-yellow-hov:   #c9901f;
+  --d-yellow-act:   #a97716;
+
+  --d-link:         #00a8fc;
+  --d-link-hov:     #006ce7;
+
+  --d-white:        #ffffff;
+  --d-black:        #060607;
+}
+
+.discord-button {
+  --btn-height: 32px;
+  --btn-padding-x: 16px;
+  --btn-font-size: 14px;
+  --btn-font-weight: 500;
+  --btn-radius: 8px;
+  --btn-gap: 8px;
+
+  --btn-bg: var(--d-grey);
+  --btn-bg-hover: var(--d-grey-hov);
+  --btn-bg-active: var(--d-grey-act);
+  --btn-text: var(--d-white);
+  --btn-border: rgb(0 0 0 / .24);
+  --btn-ring: var(--d-blurple);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--btn-gap);
+
+  min-width: 64px;
+  height: var(--btn-height);
+  padding: 0 var(--btn-padding-x);
+  box-sizing: border-box;
+
+  border: 0;
+  border-radius: var(--btn-radius);
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  box-shadow: inset 0 0 0 1px var(--btn-border), 0 1px 0 rgb(0 0 0 / .12);
+
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
+  cursor: default;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  transition: background-color 150ms ease, color 150ms ease,
+              box-shadow 150ms ease, transform 100ms ease;
+}
+
+.discord-button:hover {
+  background-color: var(--btn-bg-hover);
+  color: var(--btn-text-hover, var(--btn-text));
+}
+
+.discord-button:active {
+  background-color: var(--btn-bg-active);
+  box-shadow: inset 0 0 0 1px var(--btn-border);
+  transform: translateY(0.5px);
+}
+
+.discord-button:focus-visible {
+  outline: 2px solid var(--btn-ring);
+  outline-offset: 2px;
+}
+
+.discord-button:disabled,
+.discord-button[aria-disabled="true"] {
+  background-color: var(--btn-bg);
+  opacity: .5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.discord-button--primary {
+  --btn-bg: var(--d-blurple);
+  --btn-bg-hover: var(--d-blurple-hov);
+  --btn-bg-active: var(--d-blurple-act);
+  --btn-text: var(--d-white);
+  --btn-ring: var(--d-blurple);
+}
+
+.discord-button--secondary {
+  --btn-bg: var(--d-grey);
+  --btn-bg-hover: var(--d-grey-hov);
+  --btn-bg-active: var(--d-grey-act);
+  --btn-text: var(--d-white);
+  --btn-ring: var(--d-grey-hov);
+}
+
+.discord-button--success {
+  --btn-bg: var(--d-green);
+  --btn-bg-hover: var(--d-green-hov);
+  --btn-bg-active: var(--d-green-act);
+  --btn-text: var(--d-white);
+  --btn-ring: var(--d-green);
+}
+
+.discord-button--danger {
+  --btn-bg: var(--d-red);
+  --btn-bg-hover: var(--d-red-hov);
+  --btn-bg-active: var(--d-red-act);
+  --btn-text: var(--d-white);
+  --btn-ring: var(--d-red);
+}
+
+.discord-button--warning {
+  --btn-bg: var(--d-yellow);
+  --btn-bg-hover: var(--d-yellow-hov);
+  --btn-bg-active: var(--d-yellow-act);
+  --btn-text: var(--d-black);
+  --btn-text-hover: var(--d-black);
+  --btn-border: rgb(0 0 0 / .18);
+  --btn-ring: var(--d-yellow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .discord-button {
+    transition: background-color 100ms linear, color 100ms linear;
+  }
+  .discord-button:active { transform: none; }
+}
+
+ins.critic, del.critic {
+text-decoration: none;
+}
