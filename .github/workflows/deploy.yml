@@ -1,0 +1,36 @@
+name: Deploy
+
+on:
+    push:
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+
+            - uses: actions/setup-python@v7
+              with:
+                  python-version: "3.x"
+
+            - name: Install Zensical
+              run: pip install zensical
+
+            - name: Build site
+              run: zensical build --clean --strict
+
+            - name: Install Vercel CLI
+              run: npm i -g vercel
+
+            - name: Deploy to Vercel
+              working-directory: site
+              run: |
+                  if [ "${{ github.event.inputs.environment }}" = "production" ]; then
+                      vercel deploy --prod --token="$VERCEL_TOKEN"
+                  else
+                      vercel deploy --token="$VERCEL_TOKEN"
+                  fi
+              env:
+                  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+                  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_PROFE }}
+                  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
