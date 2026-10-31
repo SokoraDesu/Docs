@@ -3,6 +3,6 @@ site/
 .cache
 node_modules
 
-# temp, to avoid leaks ;)
-interkora
-mkdocs2.yml
+docs/interkora/tutorials
+docs/interkora/beyond
+docs/interkora/how/source.md

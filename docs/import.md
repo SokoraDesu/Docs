@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Import your leveling settings onto Sokora
 
 !!!warning "Not available yet"

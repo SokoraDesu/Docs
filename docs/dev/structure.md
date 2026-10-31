@@ -2,9 +2,6 @@
 
 ## Paradigm
 
-!!!failure "Status"
-    This reflects MVC branch. Main branch follows no structure at all.
-
 **Sokora aims to follow the Model-View-Controller programming paradigm**. If you like reading, you can check [the Wikipedia page for MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller), but TL;DR:
 
 - Views are what the user sees. They take data, present it, and offer buttons and stuff.
@@ -23,10 +20,10 @@ We’re not “purist” however, so solutions that are proven to be _better_ wi
 
 ### Features
 
-!!!failure "Status"
-    This reflects MVC branch. Features don’t exit by themselves, code is split across command handlers and other things.
-
 There’s a `features` folder where we have (you guessed it!) Sokora’s features. Examples are `mod/ban`, `math/graph`, etc…
+
+!!!important "Not all features are features"
+    Weird wording, but that’s the thing. Not all _bot features_ are structured like this: only the ones that need to be usable by Interkora and not just Discord. Discord-only features are simpler; logic is in the command file as a classic bot would do.
 
 **Features are written in a very specific way** and are usable by both commands and Interkora (sometimes only the former, though). They do all the job except for the “rendering” of the resulting embed / HTTP resp / whatever. Within them, most of the code is feature logic. Database-related stuff is used but not implemented, all calls are done to wrappers over the database (like the already existing `createCase`, for example).
 
@@ -104,9 +101,6 @@ const { reason, guild /* ... */ } = options;
     ```
 
 ### Settings
-
-!!!success "Status"
-    This reflects both branches.
 
 There’s a whole page on our settings module (as in how it works), but for its structure there’s not much to know.
 

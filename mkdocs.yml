@@ -2,13 +2,16 @@ site_name: Sokora
 site_url: https://sokora.org/
 repo_url: https://github.com/SokoraDesu/Sokora
 repo_name: sokoradesu/sokora
+site_description: Documentation for Sokora, the beautifully crafted Discord bot that’s easy, powerful, and open-source.
+site_author: The Sokora team
 
 copyright: Copyright &copy; Subete
 
 theme:
-  variant: classic
   name: material
   language: en
+  favicon: /favicon.png
+  logo: /icon.png
   palette:
     - scheme: default
       primary: purple
@@ -33,6 +36,19 @@ theme:
 
 plugins:
   - search
+  - glightbox:
+      enabled: true
+  - minify
+  - social:
+      cards_layout: default/variant
+  - llmstxt:
+      markdown_description: Sokora is a beautifully-crafted, multipurpose, free and open source Discord bot with various easy to use yet powerful features.
+      sections:
+        User-facing docs:
+        - users/*.md
+        Developer facing docs:
+          - interkora/index.md: API docs
+          - dev/*.md: Contributor guides
 
 extra:
   social:
@@ -75,11 +91,21 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Intro: index.md
+  - Home: index.md
   - User guide:
       - Welcome to the user guide: users/index.md
       - The in-bot settings panel: users/pse.md
   - Migrate your leveling bot: import.md
+  - Interkora:
+      - Welcome to Interkora: interkora/index.md
+      - How it works:
+          - How it works: interkora/how/index.md
+          - Get: interkora/how/get.md
+          - Set: interkora/how/set.md
+          - Query: interkora/how/query.md
+          - Moderate: interkora/how/mod.md
+          # - Get to the source: interkora/how/source.md
+      - Reference: interkora/reference.md
   - Developer guide:
       - Welcome, contributor!: dev/index.md
       - First steps: dev/101.md

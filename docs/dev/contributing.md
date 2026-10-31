@@ -1,8 +1,5 @@
 # Contribution guide
 
-!!!success "Status"
-    Whole page reflects both branches (except the last point, regarding reusable containers).
-
 A few, simple guidelines onto how to contribute to Sokora.
 
 ## Some things you should keep in mind at all times

@@ -1,8 +1,5 @@
 # Code quality guidelines
 
-!!!success "Status"
-    Whole page reflects both branches.
-
 A few guides onto how code contributed to Sokora should look like.
 
 - Use `camelCase` for both variables and function names. Use `CONST_CASE` for constant values that are shared, exported or not.

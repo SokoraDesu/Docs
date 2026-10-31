@@ -1,8 +1,5 @@
 # Testing
 
-!!!failure "Status"
-    This reflects MVC branch. Main branch has almost no testing and it works differently.
-
 Sokora has had a history of being rather buggy, as we know. A lot of work has been put onto this, slowly improving over time.
 
 This is how we will end it, once and for all.

@@ -1,8 +1,5 @@
 # Subete commit system
 
-!!!success "Status"
-    Whole page reflects both branches.
-
 Commit messages are hard to think of in a clever and consistent way, which is why standard rulesets to aid with the thought process are used. Usually, [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) is used, as it is widely considered a perfect standard, but we at Subete developed our own standard aimed at improving this system.
 
 A Subecommit (short for "Subete Commit System compliant commit", or equivalent to "Conventional Commit"/"Conventional Commits compliant commit") looks as follows:
