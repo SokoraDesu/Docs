@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Welcome to Interkora
 
 An attempt at creating an extensible bot you can build on top of.

@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # How it works
 
 Interkora is simple. You just write commands in the message box and they run.

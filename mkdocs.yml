@@ -94,7 +94,13 @@ nav:
   - Home: index.md
   - User guide:
       - Welcome to the user guide: users/index.md
-      - The in-bot settings panel: users/pse.md
+      - Settings:
+        - The in-bot settings panel: users/pse.md
+      - Moderation:
+        - Cases: users/mod/cases.md
+        - What you can do: users/mod/modtypes.md
+      - Writing:
+        - Dynamic variables: users/variables.md
   - Migrate your leveling bot: import.md
   - Interkora:
       - Welcome to Interkora: interkora/index.md
@@ -111,6 +117,8 @@ nav:
       - First steps: dev/101.md
       - The codebase:
         - Overall structure: dev/structure.md
+        - Feature: dev/features.md
+        - Settings: dev/settings.md
         - Testing: dev/testing.md
       - Guidelines:
         - Developer manual: dev/contributing.md

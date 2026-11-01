@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Query commands
 
 With `soko$query` you access control commands.

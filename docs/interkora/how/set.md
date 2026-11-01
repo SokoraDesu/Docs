@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Set
 
 You can set settings with Interkora.

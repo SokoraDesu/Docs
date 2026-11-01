@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Moderate
 
 You can prepare moderation actions.

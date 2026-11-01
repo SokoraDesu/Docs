@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Get stuff
 
 With `soko$get`, you can get various things:

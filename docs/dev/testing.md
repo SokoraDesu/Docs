@@ -2,7 +2,7 @@
 
 Sokora has had a history of being rather buggy, as we know. A lot of work has been put onto this, slowly improving over time.
 
-This is how we will end it, once and for all.
+This work resulted in the (currently still being worked on) Sokora test suite.
 
 ## Towards a test-driven, end-to-end covered Sokora
 
