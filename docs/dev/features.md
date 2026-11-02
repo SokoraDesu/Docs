@@ -14,7 +14,7 @@ There’s a `features` folder where we have (you guessed it!) Sokora’s feature
 
 An example of a feature’s flow is this:
 
-![Flow diagram for a feature](image1.png)
+![Flow diagram for a feature](./image1.png)
 
 All features share a somewhat common shape (not final, might iterate):
 
