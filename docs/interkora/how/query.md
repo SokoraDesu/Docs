@@ -23,6 +23,15 @@ Commands will only work on guilds where you exist and you have permissions to do
 !!!tip
     You don’t need to enable or configure Interkora in said guild, Sokora checks enablement status only for the one the actions are supposed to run within.
 
+!!!note
+    You can skip query parameters if it’s more comfortable, you can pass a `gid` parameter anywhere within the call; it’ll be used and removed before parsing.
+    
+    ```bash
+    soko$get settings leveling.rewards # this guild
+    soko$get settings gid:1234567… leveling.rewards # that guild
+    soko$get settings leveling.rewards gid:1234567… # that guild too, position doesn’t matter
+    ```
+
 ## Control future queries
 
 Query also exposes settings for future settings. For now, only whitelist control is exposed, so you can do it without going through PSE (as Discord doesn’t let us make PSE’s whitelist control behave as good as we’d like).
